@@ -4,6 +4,7 @@ metadata:
   name: "echo-job"
   labels:
     app.kubernetes.io/name: echo-job-label
+  namespace: default
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
