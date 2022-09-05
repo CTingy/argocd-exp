@@ -1,0 +1,2 @@
+resources:
+  - django-job/echo.yaml

@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: "echo-job"
+  labels:
+    app.kubernetes.io/name: echo-job-label
+spec:
+  backoffLimit: 2
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: python
+          image: PYTHON_IMG
+          imagePullPolicy: IfNotPresent
+          command:
+            - echo
+          args:
+            - hello_world > /123.txt

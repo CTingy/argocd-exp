@@ -1,0 +1,7 @@
+bases:
+- ../base
+
+images:
+- name: PYTHON_IMG
+  newName: python
+  newTag: 3.7.10-slim-buster
