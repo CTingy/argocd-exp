@@ -3,3 +3,4 @@
 
 resources:
   - django-job/echo.yaml
+  - django-job/nginx-svc.yaml
