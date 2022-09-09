@@ -4,5 +4,5 @@ bases:
 images:
 - name: PYTHON_IMG
   newName: python
-  newTag: 3.7.10-slim-buster
-  # newTag: 3.10.6-slim-buster
+  # newTag: 3.7.10-slim-buster
+  newTag: 3.10.6-slim-buster
