@@ -1,8 +1,18 @@
 bases:
 - ../base
 
-images:
-- name: PYTHON_IMG
-  newName: python
-  # newTag: 3.7.10-slim-buster
-  newTag: 3.10.6-slim-buster
+# images:
+# - name: PYTHON_IMG
+#   newName: python
+#   # newTag: 3.7.10-slim-buster
+#   newTag: 3.10.6-slim-buster
+
+namespace: default
+
+patches:
+- patch: |-
+    - op: replace
+      path: /spec/template/spec/containers/0/image
+      value: python:3.7.10-slim-buster
+  target:
+    kind: Job

@@ -14,7 +14,7 @@ spec:
       restartPolicy: Never
       containers:
         - name: python
-          image: PYTHON_IMG
+          image: null
           imagePullPolicy: IfNotPresent
           command:
             - echo
