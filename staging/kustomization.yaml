@@ -13,6 +13,6 @@ patches:
 - patch: |-
     - op: replace
       path: /spec/template/spec/containers/0/image
-      value: python:3.7.10-slim-buster
+      value: python:3.10.6-slim-buster
   target:
     kind: Job
