@@ -2,5 +2,6 @@
 # kind: Kustomization
 
 resources:
-  - django-job/echo.yaml
-  - django-job/nginx-svc.yaml
+  - echo.yaml
+  - nginx-svc.yaml
+  - nginx-deploy.yaml
